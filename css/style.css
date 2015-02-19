@@ -5,17 +5,58 @@
 @import url(http://fonts.googleapis.com/css?family=Muli);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(metro-bootstrap.min.css);
+@import url(timeline.css);
 
 .jumbotron
 {
   padding-top: 5%;
   height: 100%;
   margin-bottom: 0;
+  background-color: black;
   background: url(https://pbs.twimg.com/profile_banners/95964363/1413122815/1500x500);
-  background-size: 100% 100%
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: black
 }
 
 .img-circle
 {
   height: 50%;
+}
+
+li
+{
+  font-size: 14px;
+}
+
+#aboutme
+{
+  background:#2EA197;
+  color: #fff;
+}
+
+#skills
+{
+  background: #FFC887;
+}
+
+#skills h1
+{
+  font-size: 42px;
+}
+
+#skills p
+{
+  font-size: 24px;
+  font-family: 'Droid Sans';
+}
+
+.cd-date
+{
+  visibility: hidden;
+}
+
+.cd-read-more
+{
+  visibility: hidden;
 }
