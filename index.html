@@ -1,5 +1,75 @@
 <html>
 	<head>
-		<title>Test</title>
+		<script type="text/javascript" src="js/jQuery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/WOW.js"></script>
+		<script type="text/javascript">new WOW().init();</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Girish Prabhu Hunsemakki</title>
+		<script>
+			$(function() {
+	  			$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+					{
+						var target = $(this.hash);
+      					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      					if (target.length) {
+        					$('html,body').animate({
+          						scrollTop: target.offset().top
+        					}, 1000);
+        					return false;
+      					}
+					}
+    				this.toggleClass("active");
+  				});
+			});				
+		</script>
 	</head>
+	<body>
+		<!-- Fixed navbar -->
+    	<nav class="navbar navbar-inverse navbar-fixed-top wow fadeIn">
+      		<div class="container">
+        		<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+          			<a class="navbar-brand" href="#">Girish</a>
+        		</div>
+        		<div id="navbar" class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav">
+            			<li class="wow fadeIn" data-wow-delay="250ms"><a href="#">Home</a></li>
+            			<li class="wow fadeIn" data-wow-delay="500ms"><a href="#about">About</a></li>
+        				<li class="wow fadeIn" data-wow-delay="750ms"><a href="#contact">Contact</a></li>
+          			</ul>
+    			</div><!--/.nav-collapse -->
+      		</div>
+		</nav>
+		</div>
+		<div class="jumbotron wow fadeIn" data-wow-delay="1s">
+			<div class="container" align="center">
+				<img src="img/Girish.jpg" class="img img-circle">
+				<h1>Girish Prabhu</h1>
+				<h2 class="wow fadeIn" data-wow-delay="1500ms">Computer <span class="wow fadeIn" data-wow-delay="1750ms">Science</span> <span class="wow fadeIn" data-wow-delay="2s">Engineer</span></h2>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+  				$('a[href*=#]:not([href=#])').click(function() {
+    				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      					var target = $(this.hash);
+      					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      					if (target.length) {
+        					$('html,body').animate({
+          						scrollTop: target.offset().top
+        					}, 1000);
+        					return false;
+      					}
+    				}
+  				});
+			});
+		</script>
+	</body>
 </html>
